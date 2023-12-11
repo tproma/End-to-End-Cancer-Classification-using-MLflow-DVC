@@ -7,3 +7,8 @@ from urllib.parse import urlparse
 import mlflow
 from mlflow.models.signature import infer_signature
 import mlflow.sklearn
+
+import logging 
+
+logging.basicConfig(level = logging.WARN)
+logger = logging.getLogger(__name__)
