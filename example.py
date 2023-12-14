@@ -28,3 +28,7 @@ if __name__=="__main__":
 
     # Read teh wine-quality csv file from thr url
     csv_url = ""
+    try:
+        data =  pd.read_csv(csv_url, sep=";")
+    except Exception as e:
+        logger.exception("Unable to download csv")
