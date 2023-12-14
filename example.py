@@ -23,3 +23,8 @@ def eval_metrics(actual, pred):
 
 if __name__=="__main__":
     warnings.filterwarnings("ignore")
+    np.random.seed(40)
+
+
+    # Read teh wine-quality csv file from thr url
+    csv_url = ""
