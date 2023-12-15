@@ -54,4 +54,10 @@ if __name__=="__main__":
     with mlflow.start_run():
         lr = ElasticNet(alpha=alpha, l1_ratio=l1_ratio,random_state=42)
         lr.fit(train_x, train_y)
+
+        predicted_qualities = lr.predict(test_x)
+
+        (rmse, mae, r2) = eval_metrics(test_y, predicted_qualities)
+
+        print("Elasticnet model (alpha = {:f}, l1_ratio = {:f}):".format(alpha, l1_ratio))
         
