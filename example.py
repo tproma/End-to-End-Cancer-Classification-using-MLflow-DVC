@@ -35,4 +35,8 @@ if __name__=="__main__":
 
     # Split the data into trainin g and test test sets
     train, test = train_test_split(data)
-    
+
+
+    # The predicted column is quality which is a scaler from [3,9]
+    train_x = train.drop(["quality"], axis = 1)
+    test_x = test.drop(["quality"], axis = 1)
