@@ -32,3 +32,7 @@ if __name__=="__main__":
         data =  pd.read_csv(csv_url, sep=";")
     except Exception as e:
         logger.exception("Unable to download csv")
+
+    # Split the data into trainin g and test test sets
+    train, test = train_test_split(data)
+    
