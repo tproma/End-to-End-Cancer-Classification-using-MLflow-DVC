@@ -11,7 +11,7 @@ class DataIngestion:
         self.config = config
 
 
-     def download_file(self)-> str:
+    def download_file(self)-> str:
         '''
         Fetch data from the url
         '''
@@ -31,7 +31,7 @@ class DataIngestion:
         except Exception as e:
             raise e
 
-     def extract_zip_file(self):
+    def extract_zip_file(self):
         """
         zip_file_path: str
         Extracts the zip file into the data directory
