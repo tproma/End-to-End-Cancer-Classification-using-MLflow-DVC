@@ -1,6 +1,7 @@
 from cnnClassifier.constants import *
 from cnnClassifier.utils.common import read_yaml, create_directories
-from cnnClassifier.entity.config_entity import DataIngestionConfig
+from cnnClassifier.entity.config_entity import DataIngestionConfig,
+
 
 
 class ConfigurationManager:
@@ -15,7 +16,7 @@ class ConfigurationManager:
         create_directories([self.config.artifacts_root])
 
 
-     def get_data_ingestion_config(self) -> DataIngestionConfig:
+    def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
 
         create_directories([config.root_dir])
