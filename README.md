@@ -21,3 +21,8 @@ pip install -r requirements.txt
 7. Update the pipeline
 8. Update the main.py
 9. Update the dvc.yaml
+
+### Kaggle Dataset
+'''
+https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
+'''
