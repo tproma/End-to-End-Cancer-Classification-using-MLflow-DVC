@@ -14,7 +14,7 @@ except Exception as e:
     logger.exception(e)
     raise e
 
-
+'''
 
 STAGE_NAME = "Prepare base model"
 try: 
@@ -26,3 +26,4 @@ try:
 except Exception as e:
         logger.exception(e)
         raise e
+'''
