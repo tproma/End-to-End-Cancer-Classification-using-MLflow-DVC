@@ -23,11 +23,11 @@ pip install -r requirements.txt
 9. Update the dvc.yaml
 
 ### Kaggle Dataset
-'''
+```
 https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
-'''
+```
 
 ### drive link
-'''
+```
 https://drive.google.com/file/d/18uXV88Z3PjWkYib-dKHVMr55VrqiiFrl/view?usp=drive_link
-'''
+```
