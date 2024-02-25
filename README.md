@@ -10,6 +10,18 @@ conda create -p venv python=3.8 -y
 pip install -r requirements.txt
 ```
 
+### Step 3: 
+
+### dagshub
+[dagshub](https://dagshub.com/)
+
+MLFLOW_TRACKING_URI=https://dagshub.com/tproma/End-to-End-Cancer-Classification-using-MLflow-DVC.mlflow \
+MLFLOW_TRACKING_USERNAME=tproma \
+MLFLOW_TRACKING_PASSWORD=7b4574af852ac4a1b1b6350935ca23e65d699d65 \
+python script.py
+
+
+
 
 ## Workflows
 1. Update config.yaml
