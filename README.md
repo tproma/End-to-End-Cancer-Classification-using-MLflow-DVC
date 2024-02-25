@@ -25,7 +25,6 @@ python script.py
 export MLFLOW_TRACKING_URI=https://dagshub.com/tproma/End-to-End-Cancer-Classification-using-MLflow-DVC.mlflow
 export MLFLOW_TRACKING_USERNAME=tproma
 export MLFLOW_TRACKING_PASSWORD=7b4574af852ac4a1b1b6350935ca23e65d699d65
-
 ```
 
 ## Workflows
