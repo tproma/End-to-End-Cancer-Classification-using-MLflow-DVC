@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/A_Category/iNeuron/End-to-End-Cancer-Classification-using-MLflow-DVC/mlruns/0/8c76e600cb1d40c49fe15f5ab9b64d0b/artifacts
+end_time: 1709480817903
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8c76e600cb1d40c49fe15f5ab9b64d0b
+run_name: orderly-ape-562
+run_uuid: 8c76e600cb1d40c49fe15f5ab9b64d0b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1709480804927
+status: 3
+tags: []
+user_id: Tanjina Proma
