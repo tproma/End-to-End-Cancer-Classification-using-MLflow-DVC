@@ -47,3 +47,13 @@ https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
 ```
 https://drive.google.com/file/d/18uXV88Z3PjWkYib-dKHVMr55VrqiiFrl/view?usp=drive_link
 ```
+
+##### cmd
+- mlflow ui
+
+
+### DVC cmd
+
+1. dvc init
+2. dvc repro
+3. dvc dag
