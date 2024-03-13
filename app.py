@@ -16,3 +16,16 @@ class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
         self.classifier = PredictionPipeline(self.filename)
+
+
+@app.route("/", methods=['GET'])  
+@cross_origin()
+def home():
+    return render_template('index.html')
+
+
+@app.route("/train", methods=['GET', 'POST'])
+@cross_origin()
+def trainRoute():
+    os.system("python main.py")
+    return "Training done successfully!"
