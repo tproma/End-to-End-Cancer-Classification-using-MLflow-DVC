@@ -2,7 +2,7 @@ import numpy as np
 from tensorflow.keras.models import load_model
 from tensorflow.keras.preprocessing import image
 import os
-
+from cnnClassifier.components.model_trainer import Training
 
 class PredictionPipeline:
     def __init__(self,filename):
@@ -20,12 +20,9 @@ class PredictionPipeline:
         test_image = image.load_img(imagename, target_size = (224,224))
         test_image = image.img_to_array(test_image)
         test_image = np.expand_dims(test_image, axis = 0)
-        result = np.argmax(model.predict(test_image), axis=1)
-        print(result)
+        result = np.argmax(Training.model.predict(test_image), axis=1)
+        result = int(result)
+        class_indice = dict((v,k) for k,v in Training.train_generator.class_indices.items())
 
-        if result[0] == 1:
-            prediction = 'Normal'
-            return [{ "image" : prediction}]
-        else:
-            prediction = 'Adenocarcinoma Cancer'
-            return [{ "image" : prediction}]
+        print("the class is ", class_indice[result])
+        
