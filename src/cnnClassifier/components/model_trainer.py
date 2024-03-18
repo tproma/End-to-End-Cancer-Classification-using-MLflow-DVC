@@ -61,6 +61,7 @@ class Training:
             **dataflow_kwargs
         )
 
+
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
         model.save(path)
@@ -82,3 +83,12 @@ class Training:
             path=self.config.trained_model_path,
             model=self.model
         )
+
+
+''' 
+    def class_names(self):
+
+        class_indice = dict((v,k) for k,v in self.train_generator.class_indices.items())
+        print(class_indice)
+        return class_indice
+'''
