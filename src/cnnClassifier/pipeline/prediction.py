@@ -15,7 +15,7 @@ class PredictionPipeline:
     def predict(self):
         ## load model
         # model = load_model(os.path.join("artifacts","training", "model.h5"))
-        model = load_model(os.path.join("model", "ct_vgg_best_model.hdf5"))
+        model = load_model(os.path.join("model", "ct_incep_best_model.hdf5"))
 
         imagename = self.filename
         test_image = image.load_img(imagename, target_size = (350,350))
@@ -25,8 +25,9 @@ class PredictionPipeline:
         result = int(result)
 
         class_names = ["Adenocarcinoma", "Large cell carcinoma", "Normal", "Squamous cell carcinoma"]
-        print("the class is ", class_names[result])
+        print("The class is ", class_names[result])
         
+        return [{ "image" : class_names[result]}]
 
 '''
         config = ConfigurationManager()
