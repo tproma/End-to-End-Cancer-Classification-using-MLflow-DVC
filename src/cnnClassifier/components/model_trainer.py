@@ -84,11 +84,3 @@ class Training:
             model=self.model
         )
 
-
-''' 
-    def class_names(self):
-
-        class_indice = dict((v,k) for k,v in self.train_generator.class_indices.items())
-        print(class_indice)
-        return class_indice
-'''
