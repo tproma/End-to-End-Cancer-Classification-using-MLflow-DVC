@@ -43,10 +43,8 @@ export MLFLOW_TRACKING_PASSWORD=7b4574af852ac4a1b1b6350935ca23e65d699d65
 https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
 ```
 
-### drive link
-```
-https://drive.google.com/file/d/18uXV88Z3PjWkYib-dKHVMr55VrqiiFrl/view?usp=drive_link
-```
+### Data link
+[link](https://drive.google.com/file/d/18uXV88Z3PjWkYib-dKHVMr55VrqiiFrl/view?usp=drive_link)
 
 ##### cmd
 - mlflow ui
