@@ -1,0 +1,7 @@
+.github/
+.jenkins/
+docs/
+artifacts/
+logs/
+notebooks/
+venv/
